@@ -29,9 +29,12 @@ const MobileNav = () => {
               src="/icons/logo.svg"
               width={32}
               height={32}
-              alt="yoom logo"
+              alt="logo"
             />
-            <p className="text-[26px] px-2 font-extrabold text-white">Streamooo</p>
+            <p className="text-white font-extrabold text-[26px] px-2 max-sm:hidden">
+              <span className="text-[32px] text-pink-500">STUDIO</span> 
+              <span className="text-[15px] text-white">  by CASTIFY</span>
+            </p>
           </Link>
           <div className="flex h-[calc(100vh-72px)] flex-col justify-between overflow-y-auto">
             <SheetClose asChild>

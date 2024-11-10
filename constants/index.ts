@@ -1,6 +1,6 @@
 export const sidebarLinks = [
   {
-    imgURL: '/icons/Home.svg',
+    imgURL: '/icons/Home.png',
     route: '/',
     label: 'Home',
   },
@@ -10,21 +10,21 @@ export const sidebarLinks = [
     route: '/upcoming',
     label: 'Upcoming',
   },
-  {
-    imgURL: '/icons/previous.svg',
-    route: '/previous',
-    label: 'Previous',
-  },
+  // {
+  //   imgURL: '/icons/previous.svg',
+  //   route: '/previous',
+  //   label: 'Previous',
+  // },
   {
     imgURL: '/icons/Video.svg',
     route: '/recordings',
     label: 'Recordings',
   },
-  {
-    imgURL: '/icons/add-personal.svg',
-    route: '/personal-room',
-    label: 'Personal Room',
-  },
+  // {
+  //   imgURL: '/icons/add-personal.svg',
+  //   route: '/personal-room',
+  //   label: 'Personal Room',
+  // },
 ];
 
 export const avatarImages = [

@@ -1,4 +1,3 @@
-/* eslint-disable camelcase */
 'use client';
 
 import { useState } from 'react';
@@ -71,33 +70,30 @@ const MeetingTypeList = () => {
   const meetingLink = `${process.env.NEXT_PUBLIC_BASE_URL}/meeting/${callDetail?.id}`;
 
   return (
-    <section className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4">
+    <section className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3">
+      {/* Replace with Upcoming HomeCard */}
       <HomeCard
-        img="/icons/add-meeting.svg"
-        title="New Stream"
-        description="Start an instant Stream"
-        className='bg-red-1'
-        handleClick={() => setMeetingState('isInstantMeeting')}
+        img="/icons/upcoming-home.png"
+        title="Upcoming"
+        description="Check upcoming streams"
+        className="bg-purple-1"
+        handleClick={() => router.push('/upcoming')}
       />
+
+      {/* Join Stream HomeCard */}
       <HomeCard
-        img="/icons/join-meeting.svg"
+        img="/icons/join.png"
         title="Join Stream"
         description="via invitation link"
-        className="bg-blue-2"
+        className="bg-purple-1"
         handleClick={() => setMeetingState('isJoiningMeeting')}
       />
+
       <HomeCard
-        img="/icons/schedule.svg"
-        title="Schedule Stream"
-        description="Plan your Stream"
-        className="bg-navy-1"
-        handleClick={() => setMeetingState('isScheduleMeeting')}
-      />
-      <HomeCard
-        img="/icons/recordings.svg"
-        title="View Recordings"
+        img="/icons/video-home.png"
+        title="Recordings"
         description="Stream Recordings"
-        className="bg-teal-1"
+        className="bg-purple-1"
         handleClick={() => router.push('/recordings')}
       />
 
@@ -165,15 +161,6 @@ const MeetingTypeList = () => {
           className="border-none bg-dark-3 focus-visible:ring-0 focus-visible:ring-offset-0"
         />
       </MeetingModal>
-
-      <MeetingModal
-        isOpen={meetingState === 'isInstantMeeting'}
-        onClose={() => setMeetingState(undefined)}
-        title="Start an Instant Stream"
-        className="text-center"
-        buttonText="Start Stream"
-        handleClick={createMeeting}
-      />
     </section>
   );
 };

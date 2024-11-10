@@ -5,7 +5,7 @@ import Navbar from '@/components/Navbar';
 import Sidebar from '@/components/Sidebar';
 
 export const metadata: Metadata = {
-  title: 'Streamooo',
+  title: 'Castify-Viewer',
   description: 'A workspace for you, powered by Stream Chat and Clerk.',
 };
 
@@ -17,7 +17,7 @@ const RootLayout = ({ children }: Readonly<{children: ReactNode}>) => {
       <div className="flex">
         <Sidebar />
         
-        <section className="flex min-h-screen flex-1 flex-col px-6 pb-6 pt-28 max-md:pb-14 sm:px-14">
+        <section className="flex min-h-screen flex-1 flex-col px-6 pb-6 pt-28 max-md:pb-14 sm:px-14 ">
           <div className="w-full">{children}</div>
         </section>
       </div>
