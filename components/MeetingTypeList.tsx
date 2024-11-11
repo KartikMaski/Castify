@@ -76,7 +76,7 @@ const MeetingTypeList = () => {
         img="/icons/upcoming-home.png"
         title="Upcoming"
         description="Check upcoming streams"
-        className="bg-purple-1"
+        className="bg-card-1"
         handleClick={() => router.push('/upcoming')}
       />
 
@@ -85,7 +85,7 @@ const MeetingTypeList = () => {
         img="/icons/join.png"
         title="Join Stream"
         description="via invitation link"
-        className="bg-purple-1"
+        className="bg-card-1"
         handleClick={() => setMeetingState('isJoiningMeeting')}
       />
 
@@ -93,7 +93,7 @@ const MeetingTypeList = () => {
         img="/icons/video-home.png"
         title="Recordings"
         description="Stream Recordings"
-        className="bg-purple-1"
+        className="bg-card-1"
         handleClick={() => router.push('/recordings')}
       />
 

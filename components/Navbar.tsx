@@ -16,8 +16,8 @@ const Navbar = () => {
           className="max-sm:size-10"
         />
         <p className="text-white font-extrabold text-[26px] px-2 max-sm:hidden">
-          <span className="text-[32px] text-pink-500">STUDIO</span> 
-          <span className="text-[15px] text-white">  by CASTIFY</span>
+          {/* <span className="text-[32px] text-cyan-500">STUDIO</span>  */}
+          <span className="text-[32px] text-cyan-500">Castify</span>
         </p>
       </Link>
       <div className="flex-between gap-5  ">

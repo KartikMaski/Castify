@@ -26,14 +26,14 @@ const MobileNav = () => {
         <SheetContent side="left" className="border-none bg-dark-1">
           <Link href="/" className="flex items-center gap-1">
             <Image
-              src="/icons/logo.svg"
+              src="/icons/logo.png"
               width={32}
               height={32}
               alt="logo"
             />
-            <p className="text-white font-extrabold text-[26px] px-2 max-sm:hidden">
-              <span className="text-[32px] text-pink-500">STUDIO</span> 
-              <span className="text-[15px] text-white">  by CASTIFY</span>
+            <p className="text-white font-extrabold text-[26px] px-2">
+              {/* <span className="text-[32px] text-cyan-500">STUDIO</span>  */}
+              <span className="text-[32px] text-cyan-500">Castify</span>
             </p>
           </Link>
           <div className="flex h-[calc(100vh-72px)] flex-col justify-between overflow-y-auto">
@@ -50,7 +50,7 @@ const MobileNav = () => {
                         className={cn(
                           'flex gap-4 items-center p-4 rounded-lg w-full max-w-60',
                           {
-                            'bg-blue-1': isActive,
+                            'bg-navy-1': isActive,
                           }
                         )}
                       >
