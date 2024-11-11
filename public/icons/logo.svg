@@ -1,0 +1,18 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient -->
+  <defs>
+    <linearGradient id="modernGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4e54c8; stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8f44fd; stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="30" fill="url(#modernGradient)" />
+
+  <!-- Play Button -->
+  <circle cx="100" cy="100" r="40" fill="white" />
+  <polygon points="90,80 90,120 120,100" fill="url(#modernGradient)" />
+
+  <!-- Subtle Broadcast Signal -->
+  <circle cx="100" cy="100" r="70" stroke="white" stroke-width="3" fill="none" opacity="0.6" />
+  <circle cx="100" cy="100" r="85" stroke="white" stroke-width="2" fill="none" opacity="0.3" />
+</svg>
